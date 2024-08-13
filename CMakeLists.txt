@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(example)
+project(Example)
 
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -23,6 +23,9 @@ igl_include(glfw)
 #igl_include(restricted matlab)
 #igl_include(restricted mosek)
 #igl_include(restricted triangle)
+
+#include Bartels
+include_directories("${PROJECT_SOURCE_DIR}/../Bartels/include")
 
 # Add your project files
 file(GLOB SRC_FILES *.cpp)
